@@ -1,0 +1,171 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Go to testing environment",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 857180777,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"http://192.168.242.99:8080/spider-ump/\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://192.168.242.99:8080/spider-ump/",
+                  "offset": 1
+                }
+              ],
+              "location": "submit.website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3412188841,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I use \"admin\" and \"Admin-2013\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 7
+                },
+                {
+                  "val": "Admin-2013",
+                  "offset": 19
+                }
+              ],
+              "location": "submit.iUseMyAnd(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165014562,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I go to the index \"website\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "website",
+                  "offset": 19
+                }
+              ],
+              "location": "submit.iGoToTheIndex(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11300298402,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click into the layer \"Medio_Ambiente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Medio_Ambiente",
+                  "offset": 22
+                }
+              ],
+              "location": "submit.clickIntoTheLayer(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6627189450,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.loginPage()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Submit the test history you are needing.",
+        "description": "",
+        "id": "submit-spider-test-according-to-given-parameters;submit-the-test-history-you-are-needing.",
+        "after": [
+          {
+            "result": {
+              "duration": 1415277829,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.deleteCookiesAndDestroy()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 138950,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "execute the test \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 18
+                }
+              ],
+              "location": "submit.executeTheTest(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 158961,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I expect the status \"status\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 21
+                }
+              ],
+              "location": "submit.iExpectTheStatus(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Submit Spider test according to given parameters",
+    "description": "\r\n// IMPORTANTE: Si en el feature hay unicamente un Background sin scenarios, el test se ignora automaticamente",
+    "id": "submit-spider-test-according-to-given-parameters",
+    "keyword": "Feature",
+    "uri": "spider/submit.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]
