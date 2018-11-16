@@ -9,7 +9,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'pwd'
+        sh 'mvn test'
       }
     }
   }
